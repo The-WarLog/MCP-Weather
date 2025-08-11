@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "puch-chatbot": {
+      "command": "python",
+      "args": ["main.py", "--server"],
+      "cwd": ".",
+      "env": {
+        "OPENWEATHER_API_KEY": "9a0157d7516add71c914fe0c841955c1",
+        "GEMINI_API_KEY": "AIzaSyCyvS2xDMvagLzjwb8nqK-2OsTjZD12d2U"
+      },
+      "disabled": false,
+      "autoApprove": ["chat", "search_web", "get_weather"]
+    }
+  }
+}

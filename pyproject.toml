@@ -1,0 +1,17 @@
+[project]
+name = "puch-mcp-chatbot"
+version = "0.1.0"
+description = "MCP Chatbot Server with Weather, Search, and AI Chat capabilities"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.12.4",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.0.0",
+    "google-generativeai>=0.8.0",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.setuptools]
+py-modules = ["main", "models", "chat_service", "search_service", "puch", "whatsapp_adapter"]
